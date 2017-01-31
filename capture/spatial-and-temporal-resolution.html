@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+	<!--[if lt IE 10]> <html class="lt-ie10 no-js"  lang=""> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Exploratory, and collaboratory, review of current and upcoming satellite tools for development, from capture, distribution, analysis and applications.">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>State of Satellite Imagery</title>
+	<link rel="canonical" href="/capture/spatial-and-temporal-resolution.html">
+	<link rel="alternate" type="application/rss+xml" title="Jekyll Seed" href="/feed.xml">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,500,300,300italic' rel='stylesheet' type='text/css'>
+
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+	<link rel="stylesheet" href="/assets/styles/main-1793a45fb8.css">
+</head>
+
+
+	<body>
+
+		<header id="header" class="hero">
+	<div class="hero-block">
+	  <h1 class="hero-block__title"><a href="/" class="icon-centerer"><i class="collecticon collecticon-satsummit-logo-symbol-pos"></i> Satellites in Global Development</a></h1>
+		<!-- Mobile Nav -->
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn">&times;</a>
+			<ul class="secondnav">
+			  <li class="sidebar--title sidebar--title__first "><a href="/">Introduction</a></li>
+			  
+			    
+			      <li class="sidebar--title "><a href="/capture/">Capture</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection siderbar--item__active"><a href="/capture/spatial-and-temporal-resolution.html"><i class="collecticon collecticon-circle-full"></i><span>Spatial and Temporal Resolution</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--title "><a href="/analysis/">Analysis</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/analysis/spectral-bands.html"><i class="collecticon collecticon-circle-empty"></i><span>Spectral Bands</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/analysis/advanced-analysis.html"><i class="collecticon collecticon-circle-empty"></i><span>Advanced Analysis</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--title "><a href="/distribution/">Distribution</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/distribution/key-concepts.html"><i class="collecticon collecticon-circle-empty"></i><span>Key Concepts</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--title "><a href="/applications/">Applications</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/applications/accounting-of-transportation-networks.html"><i class="collecticon collecticon-circle-empty"></i><span>Accounting of Transportation Networks</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/applications/forest-and-agriculture.html"><i class="collecticon collecticon-circle-empty"></i><span>Forest and Agriculture</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/applications/disaster-reduction-and-response.html"><i class="collecticon collecticon-circle-empty"></i><span>Disaster Reduction and Response</span></a></li>
+			    
+			  
+			</ul>
+		</div>
+
+	  <!-- Mobile Nav Opener -->
+		<nav class="nav--trigger"><i class="collecticon collecticon-hamburger-menu"></i></nav>
+
+	  <!-- Contribute Block -->
+	  <a href="https://github.com/satsummit/landscape" target="_blank">
+	    <div class="contribute-block">
+	    	<i class="collecticon collecticon-github"></i>CONTRIBUTE
+	    </div>
+	  </a>
+	</div>
+</header>
+
+
+		<div class="container">
+		  <div class="container-sidenav">
+				<ul class="sidebar">
+  <li class="sidebar--title sidebar--title__first "><a href="/">Introduction</a></li>
+  
+    
+      <li class="sidebar--title "><a href="/capture/">Capture</a></li>
+    
+  
+    
+      <li class="sidebar--subsection siderbar--item__active"><a href="/capture/spatial-and-temporal-resolution.html"><i class="collecticon collecticon-circle-full"></i><span>Spatial and Temporal Resolution</span></a></li>
+    
+  
+    
+      <li class="sidebar--title "><a href="/analysis/">Analysis</a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/analysis/spectral-bands.html"><i class="collecticon collecticon-circle-empty"></i><span>Spectral Bands</span></a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/analysis/advanced-analysis.html"><i class="collecticon collecticon-circle-empty"></i><span>Advanced Analysis</span></a></li>
+    
+  
+    
+      <li class="sidebar--title "><a href="/distribution/">Distribution</a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/distribution/key-concepts.html"><i class="collecticon collecticon-circle-empty"></i><span>Key Concepts</span></a></li>
+    
+  
+    
+      <li class="sidebar--title "><a href="/applications/">Applications</a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/applications/accounting-of-transportation-networks.html"><i class="collecticon collecticon-circle-empty"></i><span>Accounting of Transportation Networks</span></a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/applications/forest-and-agriculture.html"><i class="collecticon collecticon-circle-empty"></i><span>Forest and Agriculture</span></a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/applications/disaster-reduction-and-response.html"><i class="collecticon collecticon-circle-empty"></i><span>Disaster Reduction and Response</span></a></li>
+    
+  
+ </ul>
+
+
+		    <div class="container-article">
+		      <article class="article-padding">
+
+						<!-- Generate Navigation Links-->
+						
+							
+								
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+								
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+
+						<div class="mobile--breadcrumbs">
+	
+		<a href="/capture">Capture</a> / <a href="/capture/spatial-and-temporal-resolution.html">Spatial and Temporal Resolution</a>
+	
+</div>
+
+
+		      	<h1 id="spatial-and-temporal-resolution">Spatial and Temporal Resolution</h1>
+
+<hr />
+
+<p>Spatial resolution refers to the size of one pixel on the ground. For example 15 meters means that one pixel on the image corresponds to a square of 15 by 15 meters on the ground. This is also sometimes referred to as Ground Sample Distance (GSD).  Temporal resolution refers to the how often data of the same area is collected. This is typically referred to as Revisit Time.</p>
+
+<p>Sensors can trade spatial resolution for temporal resolution, but it is difficult to maximum both. Sensors that have a high spatial resolution cover a smaller area then a sensor with the same number of pixels but with a lower spatial resolution. With a smaller field of view it takes longer to cover the same area, thus as spatial resolution increases, temporal resolution decreases.</p>
+
+<p>Freely available imagery (e.g., Landsat, Sentinel, MODIS) tends to either have a revisit time measured in days (1-4 days) with resolution in the hundreds of meters (300m-500m), or a revisit time measured in weeks (10-20 days) with resolutions in the tens of meters (10m-30m).</p>
+
+<p>High resolution commercial imagery is available up to .3m resolution, with revisit times varying quite a bit. Some sensors are tasked, or pointed to collect specific areas rather than always just collecting the area directly below. As a result, some areas may not be covered at all by tasked satellites. While there is still a premium for the highest resolution imagery (&lt;0.50m), medium to low resolution is suitable for many applications, and increasingly affordable or available at no cost.</p>
+
+<h4 id="pansharpening">Pansharpening</h4>
+
+<p>Some sensors take images of lower resolution in many bands (e.g. Multispectral red, green and blue for a color image), and then have another channel with much wider spectral range (i.e. “panchromatic”) with finer resolution. By means of a mathematical relations, it is possible to increase the resolution of the multispectral bands with the higher resolution panchromatic band. Pan-sharpened imagery doesn’t add information but can be useful for images that are primarily for human viewing purposes.</p>
+
+<h4 id="accuracy">Accuracy</h4>
+
+<p>Accuracy refers to the possible difference between the reported locations on the images and their actual location in the real world. A usual standard is a 90% likelihood within a Circular Area around the location (CE90). To ensure accuracy, satellite images are ortho-rectified for orography with either an elevation model, or using Ground Control Points (GCP).</p>
+
+<h3 id="what-spatial-resolution-do-i-need">What spatial resolution do I need?</h3>
+
+<p>The imagery samples below can help select the right imagery for your project.
+In an urban environment like Fortaleza, free pan-sharpened Landsat imagery (15m) shows the extent of the city. Medium resolution imagery like RapidEye (5m) shows roads. With Worldview 3 (.3m) and Pleiades (.5m) images you can count beach umbrellas.</p>
+
+<div id="resolutionComparison" class="extra-bottom-margin"></div>
+
+<h3 id="what-temporal-resolution-do-i-need">What temporal resolution do I need?</h3>
+
+<p>Increased capture capacity for large satellites and new microsatellite platforms offer frequent revisit rates and more extensive image capture, allowing high frequency monitoring of changes on earth. More regular data makes it easier to study change over time, to track the progress of projects, and to “rewind” to the days leading up to a disaster.</p>
+
+<p>Planet Labs high frequency imagery over Canada below shows the progress of the growing season, week by week.</p>
+
+<div id="revisitComparison"></div>
+
+		      </article>
+
+				<!-- Footer Content-->
+<footer class="article-footer ">
+
+	<!-- Determine if we need two nav blocks or one -->
+	<a href="/capture/" class="article-footer__flex">
+		<!-- Create first footer block -->
+		<article class="article-footer__left">
+			<!-- Determine which chevron to use.. -->
+			
+				<i class="collecticon collecticon-chevron-left"></i>
+			
+
+			<!-- If we're on the first page, just use the title for the next page -->
+			<h2>
+				
+					Capture
+				
+			</h2>
+		</article>
+	 </a>
+	 <!-- If we're doing two pages, make the second block -->
+	 
+	 	<a href="/analysis/spectral-bands.html" class="article-footer__flex">
+	 		<article class="article-footer__right">
+	 			<i class="collecticon collecticon-chevron-right"></i>
+
+	 			<!-- title -->
+	 			<h2>Spectral Bands</h2>
+
+				<!-- preview -->
+	 			<p></p>
+
+	 		</article>
+	 	</a>
+	 
+</footer>
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+
+		    </div>
+		  </div>
+		</div>
+
+	</body>
+
+<script src="/assets/scripts/vendor-6a0aeb6900.js"></script>
+<script src="/assets/scripts/bundle-a184204525.js"></script>
+
+</html>

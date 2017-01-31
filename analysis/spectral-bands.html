@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+	<!--[if lt IE 10]> <html class="lt-ie10 no-js"  lang=""> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Exploratory, and collaboratory, review of current and upcoming satellite tools for development, from capture, distribution, analysis and applications.">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>State of Satellite Imagery</title>
+	<link rel="canonical" href="/analysis/spectral-bands.html">
+	<link rel="alternate" type="application/rss+xml" title="Jekyll Seed" href="/feed.xml">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,500,300,300italic' rel='stylesheet' type='text/css'>
+
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+	<link rel="stylesheet" href="/assets/styles/main-1793a45fb8.css">
+</head>
+
+
+	<body>
+
+		<header id="header" class="hero">
+	<div class="hero-block">
+	  <h1 class="hero-block__title"><a href="/" class="icon-centerer"><i class="collecticon collecticon-satsummit-logo-symbol-pos"></i> Satellites in Global Development</a></h1>
+		<!-- Mobile Nav -->
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn">&times;</a>
+			<ul class="secondnav">
+			  <li class="sidebar--title sidebar--title__first "><a href="/">Introduction</a></li>
+			  
+			    
+			      <li class="sidebar--title "><a href="/capture/">Capture</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/capture/spatial-and-temporal-resolution.html"><i class="collecticon collecticon-circle-empty"></i><span>Spatial and Temporal Resolution</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--title "><a href="/analysis/">Analysis</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection siderbar--item__active"><a href="/analysis/spectral-bands.html"><i class="collecticon collecticon-circle-full"></i><span>Spectral Bands</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/analysis/advanced-analysis.html"><i class="collecticon collecticon-circle-empty"></i><span>Advanced Analysis</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--title "><a href="/distribution/">Distribution</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/distribution/key-concepts.html"><i class="collecticon collecticon-circle-empty"></i><span>Key Concepts</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--title "><a href="/applications/">Applications</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/applications/accounting-of-transportation-networks.html"><i class="collecticon collecticon-circle-empty"></i><span>Accounting of Transportation Networks</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/applications/forest-and-agriculture.html"><i class="collecticon collecticon-circle-empty"></i><span>Forest and Agriculture</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/applications/disaster-reduction-and-response.html"><i class="collecticon collecticon-circle-empty"></i><span>Disaster Reduction and Response</span></a></li>
+			    
+			  
+			</ul>
+		</div>
+
+	  <!-- Mobile Nav Opener -->
+		<nav class="nav--trigger"><i class="collecticon collecticon-hamburger-menu"></i></nav>
+
+	  <!-- Contribute Block -->
+	  <a href="https://github.com/satsummit/landscape" target="_blank">
+	    <div class="contribute-block">
+	    	<i class="collecticon collecticon-github"></i>CONTRIBUTE
+	    </div>
+	  </a>
+	</div>
+</header>
+
+
+		<div class="container">
+		  <div class="container-sidenav">
+				<ul class="sidebar">
+  <li class="sidebar--title sidebar--title__first "><a href="/">Introduction</a></li>
+  
+    
+      <li class="sidebar--title "><a href="/capture/">Capture</a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/capture/spatial-and-temporal-resolution.html"><i class="collecticon collecticon-circle-empty"></i><span>Spatial and Temporal Resolution</span></a></li>
+    
+  
+    
+      <li class="sidebar--title "><a href="/analysis/">Analysis</a></li>
+    
+  
+    
+      <li class="sidebar--subsection siderbar--item__active"><a href="/analysis/spectral-bands.html"><i class="collecticon collecticon-circle-full"></i><span>Spectral Bands</span></a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/analysis/advanced-analysis.html"><i class="collecticon collecticon-circle-empty"></i><span>Advanced Analysis</span></a></li>
+    
+  
+    
+      <li class="sidebar--title "><a href="/distribution/">Distribution</a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/distribution/key-concepts.html"><i class="collecticon collecticon-circle-empty"></i><span>Key Concepts</span></a></li>
+    
+  
+    
+      <li class="sidebar--title "><a href="/applications/">Applications</a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/applications/accounting-of-transportation-networks.html"><i class="collecticon collecticon-circle-empty"></i><span>Accounting of Transportation Networks</span></a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/applications/forest-and-agriculture.html"><i class="collecticon collecticon-circle-empty"></i><span>Forest and Agriculture</span></a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/applications/disaster-reduction-and-response.html"><i class="collecticon collecticon-circle-empty"></i><span>Disaster Reduction and Response</span></a></li>
+    
+  
+ </ul>
+
+
+		    <div class="container-article">
+		      <article class="article-padding">
+
+						<!-- Generate Navigation Links-->
+						
+							
+							
+						
+							
+							
+						
+							
+								
+							
+							
+						
+							
+							
+						
+							
+							
+								
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+
+						<div class="mobile--breadcrumbs">
+	
+		<a href="/analysis">Analysis</a> / <a href="/analysis/spectral-bands.html">Spectral Bands</a>
+	
+</div>
+
+
+		      	<h1 id="spectral-bands">Spectral Bands</h1>
+
+<hr />
+
+<p>Many modern satellites collect infrared and ultraviolet light not visible to the human eye. This information can be used to measure vegetation health, to monitor biomass, or to track forest fires. Newer laser and Radar-based sensors precisely scan the earth, eliminating weather dependencies, producing 3D earth models, and enabling better change detection.</p>
+
+<p>In this imagery over rural Uganda, near-infrared sensors augment imagery to highlight vegetation (False Color) and to measure the health of that vegetation (NDVI). These images show a range of imagery resolutions from different growing seasons.</p>
+
+<div id="toggledResolutionComparison"></div>
+
+<p>There are several well-known combinations that are optimized to provide maximum contrast between categories of interest under various use cases.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Combination Name</th>
+      <th>Red Wavelength</th>
+      <th>Green Wavelength</th>
+      <th>Blue Wavelength</th>
+      <th>LS 8 Bands</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Natural Color (actual RGB)</td>
+      <td>0.64-0.67µm</td>
+      <td>0.53-0.59µm</td>
+      <td>0.45-0.51µm</td>
+      <td>4 3 2</td>
+    </tr>
+    <tr>
+      <td>False Color (urban)</td>
+      <td>2.11-2.29µm</td>
+      <td>1.57-1.65µm</td>
+      <td>0.64-0.67µm</td>
+      <td>7 6 4</td>
+    </tr>
+    <tr>
+      <td>Agriculture</td>
+      <td>0.85-0.88µm</td>
+      <td>0.64-0.67µm</td>
+      <td>0.53-0.59µm</td>
+      <td>5 4 3</td>
+    </tr>
+    <tr>
+      <td>Atmospheric Penetration</td>
+      <td>2.11-2.29µm</td>
+      <td>1.57-1.65µm</td>
+      <td>0.85-0.88µm</td>
+      <td>7 6 5</td>
+    </tr>
+    <tr>
+      <td>Healthy Vegetation</td>
+      <td>0.85-0.88µm</td>
+      <td>1.57-1.65µm</td>
+      <td>0.45-0.51µm</td>
+      <td>5 6 2</td>
+    </tr>
+    <tr>
+      <td>Land/Water</td>
+      <td>0.85-0.88µm</td>
+      <td>1.57-1.65µm</td>
+      <td>0.64-0.67µm</td>
+      <td>5 6 4</td>
+    </tr>
+    <tr>
+      <td>Natural With Atmospheric Removal</td>
+      <td>2.11-2.29µm</td>
+      <td>0.85-0.88µm</td>
+      <td>0.53–0.59µm</td>
+      <td>7 5 3</td>
+    </tr>
+    <tr>
+      <td>Vegetation Analysis</td>
+      <td>1.57-1.65µm</td>
+      <td>0.85-0.88µm</td>
+      <td>0.64-0.67µm</td>
+      <td>6 5 4</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="mathematic-spectral-transformations">Mathematic spectral transformations</h4>
+
+<p>In addition to false color composition, spectral bands can be combined mathematically to emphasize a particular set of characteristics. These techniques may draw from all relevant bands, rather than the three band limit set by human vision, to draw out very specific characteristics. This generally demands greater processing of the raw data to minimize noise across the deeper image stack. Mathematical transformations can be used to with good ground data and well-developed algorithms to answer more quantitative questions. While false color can be used to detect the subjective health of agriculture, the proper mathematic transformations might be able to measure the health of each field using a transferrable metric. While false color composites can distinguish mud from water, the proper mathematic transformations could measure how wet the mud is.</p>
+
+<div class="image-container">
+	<div class="image-container-left">
+		<img class="" src="../assets/graphics/content/ndvi-thumb.png" />
+	</div>
+	<div class="image-container-right">
+		<dt><h4>Vegetation Indices</h4></dt>
+		<dd class="image-container-defintion">
+			Synthesizing data from multiple spectral bands, through ratio or coefficient-based transformations, can produce indices that can be used to compare every point in an image on the same scale. The most common indices, such as Normalized Difference Vegetation Index (NDVI) and Enhanced Vegetation Index (EVI), measure vegetation health and distinguish between types of plants, but other indices have been developed to measure burn severity, geologic qualities such as the presence of certain minerals, water turbidity, mud, snow, and more.
+		</dd>
+		
+	</div>
+</div>
+
+<div class="image-container">
+	<div class="image-container-left">
+		<img class="" src="../assets/graphics/content/pca-thumb.png" />
+	</div>
+	<div class="image-container-right">
+		<dt><h4>Principle Component Analysis</h4></dt>
+		<dd class="image-container-defintion">
+			Another image synthesis technique, Principle Component Analysis (PCA), decorrelates the data within each spectral band, such that the most common characteristics of all bands are placed in the highest category and less common characteristics are placed in lower categories, until all variance is explained. It is invaluable for exploration of data and landscape characteristics, simultaneously drawing attention to the most noteworthy and best-hidden features in a scene.
+		</dd>
+		
+	</div>
+</div>
+
+<div class="image-container">
+	<div class="image-container-left">
+		<img class="" src="../assets/graphics/content/tasscap-thumb.png" />
+	</div>
+	<div class="image-container-right">
+		<dt><h4>Kauth-Thomas</h4></dt>
+		<dd class="image-container-defintion">
+			KT-Transformations are a type of PCA, which, rather than being data-driven, combine information from multiple bands using specially developed coefficients to create the biophysically meaningful variables of Brightness, Greenness, and Wetness- the essential components of a landscape.
+		</dd>
+		
+	</div>
+</div>
+
+
+		      </article>
+
+				<!-- Footer Content-->
+<footer class="article-footer ">
+
+	<!-- Determine if we need two nav blocks or one -->
+	<a href="/analysis/" class="article-footer__flex">
+		<!-- Create first footer block -->
+		<article class="article-footer__left">
+			<!-- Determine which chevron to use.. -->
+			
+				<i class="collecticon collecticon-chevron-left"></i>
+			
+
+			<!-- If we're on the first page, just use the title for the next page -->
+			<h2>
+				
+					Analysis
+				
+			</h2>
+		</article>
+	 </a>
+	 <!-- If we're doing two pages, make the second block -->
+	 
+	 	<a href="/analysis/advanced-analysis.html" class="article-footer__flex">
+	 		<article class="article-footer__right">
+	 			<i class="collecticon collecticon-chevron-right"></i>
+
+	 			<!-- title -->
+	 			<h2>Advanced Analysis</h2>
+
+				<!-- preview -->
+	 			<p></p>
+
+	 		</article>
+	 	</a>
+	 
+</footer>
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+
+		    </div>
+		  </div>
+		</div>
+
+	</body>
+
+<script src="/assets/scripts/vendor-6a0aeb6900.js"></script>
+<script src="/assets/scripts/bundle-a184204525.js"></script>
+
+</html>

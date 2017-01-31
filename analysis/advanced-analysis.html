@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+	<!--[if lt IE 10]> <html class="lt-ie10 no-js"  lang=""> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Exploratory, and collaboratory, review of current and upcoming satellite tools for development, from capture, distribution, analysis and applications.">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>State of Satellite Imagery</title>
+	<link rel="canonical" href="/analysis/advanced-analysis.html">
+	<link rel="alternate" type="application/rss+xml" title="Jekyll Seed" href="/feed.xml">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,500,300,300italic' rel='stylesheet' type='text/css'>
+
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+	<link rel="stylesheet" href="/assets/styles/main-1793a45fb8.css">
+</head>
+
+
+	<body>
+
+		<header id="header" class="hero">
+	<div class="hero-block">
+	  <h1 class="hero-block__title"><a href="/" class="icon-centerer"><i class="collecticon collecticon-satsummit-logo-symbol-pos"></i> Satellites in Global Development</a></h1>
+		<!-- Mobile Nav -->
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn">&times;</a>
+			<ul class="secondnav">
+			  <li class="sidebar--title sidebar--title__first "><a href="/">Introduction</a></li>
+			  
+			    
+			      <li class="sidebar--title "><a href="/capture/">Capture</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/capture/spatial-and-temporal-resolution.html"><i class="collecticon collecticon-circle-empty"></i><span>Spatial and Temporal Resolution</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--title "><a href="/analysis/">Analysis</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/analysis/spectral-bands.html"><i class="collecticon collecticon-circle-empty"></i><span>Spectral Bands</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection siderbar--item__active"><a href="/analysis/advanced-analysis.html"><i class="collecticon collecticon-circle-full"></i><span>Advanced Analysis</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--title "><a href="/distribution/">Distribution</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/distribution/key-concepts.html"><i class="collecticon collecticon-circle-empty"></i><span>Key Concepts</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--title "><a href="/applications/">Applications</a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/applications/accounting-of-transportation-networks.html"><i class="collecticon collecticon-circle-empty"></i><span>Accounting of Transportation Networks</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/applications/forest-and-agriculture.html"><i class="collecticon collecticon-circle-empty"></i><span>Forest and Agriculture</span></a></li>
+			    
+			  
+			    
+			      <li class="sidebar--subsection "><a href="/applications/disaster-reduction-and-response.html"><i class="collecticon collecticon-circle-empty"></i><span>Disaster Reduction and Response</span></a></li>
+			    
+			  
+			</ul>
+		</div>
+
+	  <!-- Mobile Nav Opener -->
+		<nav class="nav--trigger"><i class="collecticon collecticon-hamburger-menu"></i></nav>
+
+	  <!-- Contribute Block -->
+	  <a href="https://github.com/satsummit/landscape" target="_blank">
+	    <div class="contribute-block">
+	    	<i class="collecticon collecticon-github"></i>CONTRIBUTE
+	    </div>
+	  </a>
+	</div>
+</header>
+
+
+		<div class="container">
+		  <div class="container-sidenav">
+				<ul class="sidebar">
+  <li class="sidebar--title sidebar--title__first "><a href="/">Introduction</a></li>
+  
+    
+      <li class="sidebar--title "><a href="/capture/">Capture</a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/capture/spatial-and-temporal-resolution.html"><i class="collecticon collecticon-circle-empty"></i><span>Spatial and Temporal Resolution</span></a></li>
+    
+  
+    
+      <li class="sidebar--title "><a href="/analysis/">Analysis</a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/analysis/spectral-bands.html"><i class="collecticon collecticon-circle-empty"></i><span>Spectral Bands</span></a></li>
+    
+  
+    
+      <li class="sidebar--subsection siderbar--item__active"><a href="/analysis/advanced-analysis.html"><i class="collecticon collecticon-circle-full"></i><span>Advanced Analysis</span></a></li>
+    
+  
+    
+      <li class="sidebar--title "><a href="/distribution/">Distribution</a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/distribution/key-concepts.html"><i class="collecticon collecticon-circle-empty"></i><span>Key Concepts</span></a></li>
+    
+  
+    
+      <li class="sidebar--title "><a href="/applications/">Applications</a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/applications/accounting-of-transportation-networks.html"><i class="collecticon collecticon-circle-empty"></i><span>Accounting of Transportation Networks</span></a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/applications/forest-and-agriculture.html"><i class="collecticon collecticon-circle-empty"></i><span>Forest and Agriculture</span></a></li>
+    
+  
+    
+      <li class="sidebar--subsection "><a href="/applications/disaster-reduction-and-response.html"><i class="collecticon collecticon-circle-empty"></i><span>Disaster Reduction and Response</span></a></li>
+    
+  
+ </ul>
+
+
+		    <div class="container-article">
+		      <article class="article-padding">
+
+						<!-- Generate Navigation Links-->
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+								
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+							
+							
+						
+
+						<div class="mobile--breadcrumbs">
+	
+		<a href="/analysis">Analysis</a> / <a href="/analysis/advanced-analysis.html">Advanced Analysis</a>
+	
+</div>
+
+
+		      	<h1 id="advanced-analysis">Advanced Analysis</h1>
+
+<hr />
+
+<p>Advanced analytical techniques go beyond inter-band math, and may classify data into predefined fuzzy or map-like categories using machine learning techniques, compare imagery taken at different times to detect change, compar imagery taken at different angles to estimate elevation, or combine multiple source datasets to exploit the best qualities of each. These techniques often result in data products like 3D terrain maps, forest density estimates, maps showing fire and burn scar extent, measurements of crop type and health, maps of land cover types, or maps showing the probability of certain minerals existing along a gradient. These techniques are most computationally intensive and require significant processing resources, but the increasing availability of elastic cloud computing has made them more practical for development organizations.</p>
+
+<div class="image-container">
+	<div class="image-container-left">
+		<img class="" src="../assets/graphics/content/feature_extraction.png" />
+	</div>
+	<div class="image-container-right">
+		<dt><h4>Elevation and Surface</h4></dt>
+		<dd class="image-container-defintion">
+			Elevation and Surface models are constructed by calculating the offset in radar or image-based data acquired from different angles. 3D terrain models are used to measure landslide or flood risk. 3D urban models are used to measure and manage vertical growth of cities, and can be used to calculate sight lines, shadow, and the corresponding implications for solar power or urban gardening initiatives.
+		</dd>
+		
+	</div>
+</div>
+
+<div class="image-container">
+	<div class="image-container-left">
+		<img class="" src="../assets/graphics/content/change_detection.png" />
+	</div>
+	<div class="image-container-right">
+		<dt><h4>Change Detection</h4></dt>
+		<dd class="image-container-defintion">
+			Analysis of imagery from different time periods to detect and understand changes. Examples include urban growth, deforestation, ice melting, landslide detection, and tracking urban conflict.
+		</dd>
+		
+	</div>
+</div>
+
+<div class="image-container">
+	<div class="image-container-left">
+		<img class="" src="../assets/graphics/content/similar_objects.png" />
+	</div>
+	<div class="image-container-right">
+		<dt><h4>Feature Extraction</h4></dt>
+		<dd class="image-container-defintion">
+			Analysis of imagery to extract and identify features. These can include man-made (buildings, roads, structures, crops, cars) and natural objects (land cover, water extent, forest health and species). Once extracted, these items can be sorted, counted, and analyzed.
+		</dd>
+		
+	</div>
+</div>
+
+
+		      </article>
+
+				<!-- Footer Content-->
+<footer class="article-footer ">
+
+	<!-- Determine if we need two nav blocks or one -->
+	<a href="/" class="article-footer__flex">
+		<!-- Create first footer block -->
+		<article class="article-footer__left">
+			<!-- Determine which chevron to use.. -->
+			
+				<i class="collecticon collecticon-chevron-left"></i>
+			
+
+			<!-- If we're on the first page, just use the title for the next page -->
+			<h2>
+				
+					Spectral Combinations
+				
+			</h2>
+		</article>
+	 </a>
+	 <!-- If we're doing two pages, make the second block -->
+	 
+	 	<a href="/distribution/" class="article-footer__flex">
+	 		<article class="article-footer__right">
+	 			<i class="collecticon collecticon-chevron-right"></i>
+
+	 			<!-- title -->
+	 			<h2>Distribution</h2>
+
+				<!-- preview -->
+	 			<p></p>
+
+	 		</article>
+	 	</a>
+	 
+</footer>
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+
+		    </div>
+		  </div>
+		</div>
+
+	</body>
+
+<script src="/assets/scripts/vendor-6a0aeb6900.js"></script>
+<script src="/assets/scripts/bundle-a184204525.js"></script>
+
+</html>
